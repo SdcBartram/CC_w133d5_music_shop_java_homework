@@ -23,4 +23,13 @@ public class Shop {
     public void removeItemFromStock(ISell item){
         stock.remove(item);
     }
+
+    //PDA example of algorithm
+    public double calculateTotalValueOfStock() {
+        double totalValue = 0.0;
+        for (ISell item : stock) {
+            totalValue += item.getSalesPrice();
+        }
+        return totalValue;
+    }
 }

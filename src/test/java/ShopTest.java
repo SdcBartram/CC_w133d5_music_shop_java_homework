@@ -43,6 +43,8 @@ public class ShopTest {
         assertEquals("Sing us a song you're the piano man", piano.play());
     }
 
+
+
     @Test
     public void canCalculateMarkUp() {
         assertEquals(2, guitarStrings.calculateMarkup(), 0.1);
